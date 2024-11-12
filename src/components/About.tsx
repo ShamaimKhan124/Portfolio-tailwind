@@ -28,7 +28,7 @@ const About = () => {
       <div className='flex flex-col md:flex-row items-center md:space-x-12'>
         {/* Image Section */}
         <div 
-          className="w-72 h-80 ml-24 rounded object-cover mb-8 md:mb-0 sm:mx-9"
+          className="w-72 h-80 ml-24 rounded object-cover mb-8 md:mb-0 sm:mx-9 lg:ml-24"
           data-aos="fade-right" 
         >
           <Image 
@@ -42,7 +42,7 @@ const About = () => {
 
         {/* Text Section */}
         <div className='flex-1' data-aos="fade-left"> 
-          <p className='text-lg mb-8'>
+          <p className='text-lg mb-8 lg:mr-24'>
             I am a passionate web developer focused on creating engaging, user-friendly websites. With a strong background in
             HTML, CSS, and JavaScript Tailwind, I thrive on turning ideas into seamless digital experiences. I love staying up-to-date with
             the latest technologies and collaborating with clients to bring their visions to life. {`Let's`} work together to build

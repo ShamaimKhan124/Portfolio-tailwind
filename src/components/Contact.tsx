@@ -25,7 +25,7 @@ const Contact = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener on unmount
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -96,7 +96,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Back to Top Button */}
+      
       {visible && (
         <button
           onClick={scrollToTop}

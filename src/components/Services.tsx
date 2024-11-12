@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import 'aos/dist/aos.css'; 
 
 const Services = [
   { id: 1, title: "Web Design", description: "Creating visually impressive and user-friendly web design." },
@@ -14,11 +14,11 @@ const Services = [
 
 const Service = () => {
   useEffect(() => {
-    // Initialize AOS
+    
     AOS.init({
-      duration: 1000,  // Animation duration
-      easing: 'ease-out-back',  // Easing type
-      once: true,  // Whether animation should happen only once
+      duration: 1000,  
+      easing: 'ease-out-back',  
+      once: true,  
     });
   }, []);
 
@@ -31,7 +31,7 @@ const Service = () => {
             <div 
               key={service.id} 
               className='bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105'
-              data-aos='fade-up' // Apply the fade-up animation on scroll
+              data-aos='fade-up' 
             >
               <div className='text-right text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-customPink to-customBlue'>
                 {service.id}
