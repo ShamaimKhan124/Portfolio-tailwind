@@ -12,7 +12,7 @@ const Navbar = () => {
     AOS.init({
       duration: 600, // Animation duration in ms
       easing: 'ease-in-out', // Easing function
-      once: true, // Whether animation should happen only once
+      once: true, // Animation occurs only once
     });
   }, []);
 
@@ -54,12 +54,8 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Navbar links */}
-        <div
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } sm:flex space-x-6 items-center`}
-        >
+        {/* Navbar links (hidden on small screens, visible on larger screens) */}
+        <div className="hidden sm:flex space-x-6 items-center">
           <a href="#home" className="hover:text-gray-400" data-aos="fade-up">
             Home
           </a>
@@ -84,7 +80,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu (visible on smaller screens) */}
+      {/* Mobile menu (visible on smaller screens only) */}
       {isMenuOpen && (
         <div
           className="sm:hidden bg-black text-white p-4 space-y-4"
