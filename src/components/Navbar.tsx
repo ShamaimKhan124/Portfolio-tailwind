@@ -54,16 +54,16 @@ const Navbar = () => {
             isMenuOpen ? 'block' : 'hidden'
           } md:flex space-x-6 items-center`}
         >
-          <a href='#home' className='hover:text-gray-400' data-aos='fade-up'>
+          <a href='#home' className='hover:text-gray-400 sm:hidden' data-aos='fade-up'>
             Home
           </a>
-          <a href='#about' className='hover:text-gray-400' data-aos='fade-up'>
+          <a href='#about' className='hover:text-gray-400 sm:hidden' data-aos='fade-up'>
             About Me
           </a>
-          <a href='#services' className='hover:text-gray-400' data-aos='fade-up'>
+          <a href='#services' className='hover:text-gray-400 sm:hidden' data-aos='fade-up'>
             Services
           </a>
-          <a href='#contact' className='hover:text-gray-400' data-aos='fade-up'>
+          <a href='#contact' className='hover:text-gray-400 sm:hidden' data-aos='fade-up'>
             Contact Me
           </a>
 
